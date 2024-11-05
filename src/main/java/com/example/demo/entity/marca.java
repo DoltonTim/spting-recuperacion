@@ -32,5 +32,5 @@ public class marca {
 	
 	@OneToMany(mappedBy = "marca", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
 	@JsonIgnore
-	private List<coche>escuela;
+	private List<coche>coche;
 }

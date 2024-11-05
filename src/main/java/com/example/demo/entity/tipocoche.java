@@ -31,5 +31,5 @@ public class tipocoche {
 	private String nombre;
 	@OneToMany(mappedBy = "tipocoche", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
 	@JsonIgnore
-	private List<coche>escuela;
+	private List<coche>coche;
 }

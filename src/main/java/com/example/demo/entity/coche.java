@@ -26,7 +26,14 @@ public class coche {
 	private String placa;
 	@Column(name = "puertas", length = 100)
 	private String puertas;
+	 
 	@ManyToOne
-    @JoinColumn(name = "id_coche", nullable = false) // Aquí "facultad_id" es el nombre de la columna en la base de datos
-    private coche coche;
+    @JoinColumn(name = "id_marca", nullable = false) // Aquí "facultad_id" es el nombre de la columna en la base de datos
+    private marca marca; // Esto crea una relación con la entidad Marca
+
+	 
+	@ManyToOne
+    @JoinColumn(name = "id_tipocoche", nullable = false) // Aquí "facultad_id" es el nombre de la columna en la base de datos
+    private tipocoche tipocoche; // Esto crea una relación con la entidad Marca
+
 }
